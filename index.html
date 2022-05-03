@@ -1,0 +1,67 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans+Narrow&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Juliana Hukuda</title>
+  </head>
+  <body>
+  <div class="divdiv">
+  <header>
+  <!--div><img src="./logojh.png" alt="logotipo" /></div> -->
+  <ul>
+  <li>
+  <a href="https://github.com/julianarhk">github</a>
+  </li>
+  <li>
+  <a href="https://www.linkedin.com/in/juliana-h-253890217/"
+  >linkedin</a>
+  </li>
+  <li><a href="mailto:julianahukuda@gmail.com">email</a></li>
+
+  <li><a href="wa.me/+5511991977227">whatsapp</a></li>
+  </ul>
+  </header>
+  <main>
+  <section class="container">
+  <div class="name">
+  <h1>Juliana Hukuda</h1>
+  <h5>Software Developer</h5>
+ </div>
+ <div onclick="displayAbout()" id="arrow">
+  <i id="animation" class="fa-solid fa-caret-up"></i>
+ </div>
+ <div style="display: none;"" id="about">
+ <p>
+ Former lawyer changing career to Software Developer. Currently learning HTML, CSS and JS. </p>
+ </p>
+ </div>
+ <div class="form">
+ <div>
+ <p>
+<b>Let's get in touch!</b>
+ </p>
+</div>
+<form action="">
+<input type="text" placeholder="Your best email (:">
+<button class= "botao">send!</button>
+</form>
+</div>
+</main>
+<script>
+  function displayAbout () {
+  var arrow= document.getElementById("animation");
+  arrow.classList.toggle("rotate");
+  var display= document.getElementById("about");
+  display.classList.toggle("active");
+  }
+</script>
+</body>
+</html>
+     

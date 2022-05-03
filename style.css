@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #9d9b00;
+  font-family: 'Marvel', sans-serif;
+}
+
+ul{
+  list-style: none;
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+}
+ 
+  body {
+    background-image: url(./fundomil.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px;
+  margin: 30px;
+  border-bottom: 1px solid #070594;
+
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  padding: 5px;
+}
+
+header ul li a:hover {
+  color: #070594;
+}
+
+header ul li a {
+  transition: 400ms;
+}
+
+.container {
+  text-align: center;
+}
+.container .name h1 {
+  font-size: 80px;
+}
+
+.container .name h5 {
+  font-size: 50px;
+}
+
+#arrow {
+  font-size: 30px;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#animation {
+  transition: 400ms;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 400ms;
+}
+
+.active {
+  display: block !important;
+}
+
+#about p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.form {
+  width: 40%;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.form input {
+  width: 50%;
+  padding: 2px 5px;
+  border: none;
+  border-radius: 2px 0px 0px 2px;
+  color: #070594;
+}
+
+.form button {
+  width: 15%;
+  padding: 2px 5px;
+  background: linear-gradient(to left, #f0f0f0	50%, #9d9b00 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color:#070594;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 400ms ease-out;
+  border-radius: 0px 2px 2px 0px;
+  margin-top: 20px;
+  margin-left: -4px;
+}
+
+.form button:hover {
+  background-position: left bottom;
+  color: #070594; 
+}
+.botao {
+  color: #070594;
+}
+@media only screen and (max-width: 480px) {
+  .container .name h1 {
+  font-size: 30px;
+  }  
+   .container .name h5 {
+    font-size: 30px;
+  }  
+  #about p {
+    max-width: 80%;
+    text-align: justify;
+  }
+  .form {
+    width: 100%;
+  }
+
+  header ul li {
+    font-size: 20px;
+  }
+}
